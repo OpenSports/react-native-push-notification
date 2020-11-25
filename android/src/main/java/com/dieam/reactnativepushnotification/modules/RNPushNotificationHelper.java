@@ -696,6 +696,7 @@ public class RNPushNotificationHelper {
         notif.putString("identifier", "" + notification.getId());
         notif.putString("title", extras.getString(Notification.EXTRA_TITLE));
         notif.putString("body", extras.getString(Notification.EXTRA_TEXT));
+        notif.putString("bigText", extras.getString(Notification.EXTRA_BIG_TEXT));
         notif.putString("tag", notification.getTag());
         notif.putString("group", original.getGroup());
         result.pushMap(notif);
